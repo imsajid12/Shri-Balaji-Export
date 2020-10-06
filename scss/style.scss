@@ -1,0 +1,111 @@
+$primary: #009688;
+$primary-overlay: rgba(0,47.6,42.75, 0.8);
+
+body {
+    margin-top: 105px;
+    overflow-x: hidden;
+}
+
+.primary-overlay {
+        background: $primary-overlay;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;    
+    }
+
+.navbar {
+    box-shadow: 2px 2px 5px $primary;
+    opacity: .9;
+    background: #fff;
+
+    .nav-item {
+        font-size: 1.4rem;
+        padding-right: 1.4rem;
+    }
+}
+
+#showcase {
+    .carousel-item {
+        height: 500px;
+    }
+
+    .carousel-image-1 {
+        background: url(../img/mission.jpg);
+        background-size: cover;
+    }
+
+    .carousel-image-2 {
+        background: url(../img/vision.jpg);
+        background-size: cover;
+    }
+}
+
+#services {
+    .card {
+        height: 200px;
+    }
+}
+
+#products {
+    .card-body {
+        background: #E5F4F3 !important;
+    }
+}
+
+.info-header {
+    width: 50%;
+    margin: auto;
+    border-bottom: 1px #ddd solid;
+}
+
+#founders {
+    img {
+        margin-top: -50px;
+    }
+
+    .card:hover {
+        background: $primary;
+        color: #fff;
+
+        .fab {
+            color: white;
+        }
+    }
+}
+
+#main-footer{
+    .fab {
+        color: white !important;
+    }
+
+    li {
+        padding: .7em;
+    }
+}
+
+.back-to-top {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    display: none;
+}
+
+
+@media(max-width: 768px) {
+    #iec {
+        display: none;
+    }
+
+    #showcase {
+
+        h1 {
+            font-size: 2rem;
+        }
+    }
+
+    .mb-resp {
+        margin-bottom: 1rem;
+    }
+}
