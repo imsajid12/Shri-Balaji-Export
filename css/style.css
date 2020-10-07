@@ -1,5 +1,4 @@
 body {
-  margin-top: 105px;
   overflow-x: hidden; }
 
 .primary-overlay {
@@ -19,7 +18,8 @@ body {
     padding-right: 1.4rem; }
 
 #showcase .carousel-item {
-  height: 500px; }
+  height: 500px;
+  width: 100%; }
 #showcase .carousel-image-1 {
   background: url(../img/mission.jpg);
   background-size: cover; }
@@ -57,7 +57,13 @@ body {
   right: 25px;
   display: none; }
 
-@media (max-width: 768px) {
+.showcasebelow410 {
+  display: none; }
+
+@media screen and (max-width: 768px) {
+  #brand-name {
+    font-size: 1rem; }
+
   #iec {
     display: none; }
 
@@ -66,3 +72,24 @@ body {
 
   .mb-resp {
     margin-bottom: 1rem; } }
+@media screen and (max-width: 414px) {
+  body {
+    margin-top: 6.7rem; }
+
+  .carousel-caption {
+    text-align: center !important;
+    font-size: 1rem !important;
+    margin: auto;
+    padding: auto; }
+    .carousel-caption ul li {
+      list-style: none;
+      text-align: left; }
+
+  .mb-resp {
+    margin-bottom: 1rem; } }
+@media (max-width: 410px) {
+  #myCarousel {
+    display: none !important; }
+
+  .showcasebelow410 {
+    display: block; } }
